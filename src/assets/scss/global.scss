@@ -1,0 +1,31 @@
+@import "font.scss";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Big Calson Medium", Arial, Helvetica, sans-serif;
+    font-size: $font-default;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    font-family: "Dumbledor 1 Wide", Arial, Helvetica, sans-serif;
+    font-size: $font-title;
+
+    &-big {
+        font-family: "Dumbledor 1 Wide", Arial, Helvetica, sans-serif;
+        font-size: $font-big-title;
+    }
+}
+
+.subtitle {
+    font-size: $font-subtitle;
+
+    &-big {
+        font-size: $font-title;
+    }
+}
