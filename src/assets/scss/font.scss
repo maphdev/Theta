@@ -1,0 +1,15 @@
+$font-big-title: 64px;
+$font-title: 32px;
+$font-default: 16px;
+$font-secondary: 13px;
+$font-tertiary: 10px;
+
+@font-face {
+    font-family: "Dumbledor 1 Wide";
+    src: url("src/assets/fonts/dumbledor/dum1/dum1wide.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Big Calson Medium";
+    src: url("src/assets/fonts/calson/big_calson_medium.ttf") format("truetype");
+}

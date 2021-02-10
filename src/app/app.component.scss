@@ -1,0 +1,16 @@
+@import "font.scss";
+@import "color.scss";
+@import "mixin.scss";
+@import "responsive.scss";
+
+.content {
+    font-family: "Big Calson Medium", Arial, Helvetica, sans-serif;
+    color: $secondary-green;
+    @include flex;
+}
+
+@include mobile-small {
+    .content {
+        color: $secondary-magenta;
+    }
+}
