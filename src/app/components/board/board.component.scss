@@ -1,0 +1,5 @@
+@import "mixin.scss";
+
+.board {
+    @include flex-full-centered;
+}
