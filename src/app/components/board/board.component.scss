@@ -1,5 +1,92 @@
 @import "mixin.scss";
+@import "color.scss";
+@import "font.scss";
+
+$border-radius: 5%;
 
 .board {
     @include flex-full-centered;
+    justify-content: space-around;
+    background-image: url("src/assets/images/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+
+    .menu {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100px;
+        background: $primary-dark-blue;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            font-size: 30px;
+
+            ul {
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .content {
+        .card {
+            position: relative;
+            width: 300px;
+            height: 450px;
+    
+            .recto, .verso {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+    
+            .verso {
+                background: $secondary-plum;
+                border-radius: $border-radius $border-radius $border-radius $border-radius;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    width: 250px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .counter {
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        background: $primary-dark-blue;
+        bottom: 0px;
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: $font-title;
+        font-weight: bolder;
+        color: white;
+
+        span {
+            margin-top: 5px;
+        }
+    }
+    
 }

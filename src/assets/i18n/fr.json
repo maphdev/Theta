@@ -2,5 +2,12 @@
     "home": {
         "title": "Projet Theta",
         "subtitle": "Le jeu"
+    },
+    "board": {
+        "menu": {
+            "tab_1": "Projet THETA",
+            "tab_2": "Histoire des personnages",
+            "tab_3": "Règles du jeu"
+        }
     }
 }

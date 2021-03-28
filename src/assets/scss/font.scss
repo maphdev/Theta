@@ -1,7 +1,7 @@
 $font-big-title: 64px;
 $font-title: 32px;
 $font-subtitle: 24px;
-$font-default: 16px;
+$font-default: 18px;
 $font-secondary: 13px;
 $font-tertiary: 10px;
 
@@ -13,4 +13,19 @@ $font-tertiary: 10px;
 @font-face {
     font-family: "Big Calson Medium";
     src: url("src/assets/fonts/calson/big_calson_medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Dual";
+    src: url("src/assets/fonts/dual/Dual-300.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Aquatico";
+    src: url("src/assets/fonts/aquatico/Aquatico-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Exodus";
+    src: url("src/assets/fonts/exodus/ExodusDemo-Striped.otf") format("opentype");
 }

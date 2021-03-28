@@ -1,3 +1,24 @@
 <div class="page board">
-    <theta-card></theta-card>
+    <div class="menu">
+        <li>
+            <ul>{{ 'board.menu.tab_1'| translate }}</ul>
+            <ul>{{ 'board.menu.tab_2'| translate }}</ul>
+            <ul>{{ 'board.menu.tab_3'| translate }}</ul>
+        </li>
+    </div>
+    <div class="content">
+        <theta-scores [scores]="scores"></theta-scores>
+        <div class="card">
+            <div class="verso">
+                <img src="assets/images/logo.png">
+            </div>
+            <theta-card class="recto"
+                [card]="currentCard"
+                (onChoice)="onChoice($event)"
+            ></theta-card>
+        </div>
+    </div>
+    <div class="counter">
+        <span>{{ counter }} km</span>
+    </div>
 </div>

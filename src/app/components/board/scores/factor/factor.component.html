@@ -1,0 +1,4 @@
+<div class="factor">
+    <img [src]="imagePath" [style.width.px]="imageSize" [style.height.px]="imageSize"/>
+    <span [ngClass]="{'loss': score === 0 || score === 10}">{{ score }}</span>
+</div>

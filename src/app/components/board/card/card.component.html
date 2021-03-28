@@ -1,9 +1,21 @@
-<div class="card">
+<div class="card"
+    [@cardAnimator]="animationState"
+    (@cardAnimator.done)="resetAnimationState($event)"
+    (swipeleft)='startAnimation("swipeleft")' 
+    (swiperight)='startAnimation("swiperight")'>
     <div class="card-visual">
-        <img src="./assets/images/visual.png"/>
-        <div class="card-visual-label">Queen Cersei</div>
+        <img [src]="card.imagePath"/>
+        <div class="card-visual-label">{{ card.characterName  }}</div>
+        <div class="card-visual-decisions">
+            <div class="card-visual-decisions-left" (click)='startAnimation("swipeleft")'>
+                <span>{{ card.problem.firstChoice.text }}</span>
+            </div>
+            <div class="card-visual-decisions-right" (click)='startAnimation("swiperight")'>
+                <span>{{ card.problem.secondChoice.text }}</span>
+            </div>
+        </div>
     </div>
     <div class="card-text">
-        <span>SILENCE... You low little creature. Don't you dare so much as let your eyes shift my way.</span>
+        <span>{{ card.problem.text }}</span>
     </div>
 </div>

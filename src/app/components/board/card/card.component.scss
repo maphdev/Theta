@@ -1,8 +1,13 @@
 @import "color.scss";
+@import "mixin.scss";
+@import "responsive.scss";
 
 $border-radius: 5%;
 
 .card {
+    font-weight: bolder;
+    text-align: center;
+    
     display: flex;
     flex-direction: column;
 
@@ -37,6 +42,55 @@ $border-radius: 5%;
             color: white;
             background-color: rgba($color: #000000, $alpha: 0.3);
         }
+
+        &-decisions {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: calc(100% - 39.2px);
+            display: flex;
+            cursor: pointer;
+
+            &-left {
+                flex: 1 0 50%;
+                @include flex-full-centered;
+
+                span {
+                    color: white;
+                    margin: 10px;
+                    visibility: hidden;
+                }
+
+                &:hover {
+                    background-color: rgba($color: $secondary-plum, $alpha: 0.8);
+                    border-radius: 15px 0 0 0;
+
+                    span {
+                        visibility: visible;
+                    }
+                }
+            }
+    
+            &-right {
+                flex: 1 0 50%;
+                @include flex-full-centered;
+
+                span {
+                    color: white;
+                    margin: 10px;
+                    visibility: hidden;
+                }
+                
+                &:hover {
+                    background-color: rgba($color: $secondary-plum, $alpha: 0.8);
+                    border-radius: 0 15px 0 0;
+
+                    span {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
     }
 
     &-text {
@@ -47,8 +101,8 @@ $border-radius: 5%;
         width: 100%;
         flex: 1 0 auto;
 
-        background-color: $tertiary-dark-green-blue;
-        border-radius: 0px 0px $border-radius $border-radius;
+        background-color: $secondary-plum;
+        border-radius: 0px 0px 2*$border-radius 2*$border-radius;
 
         text-align: center;
         color: white;

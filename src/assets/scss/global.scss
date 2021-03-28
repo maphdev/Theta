@@ -1,9 +1,12 @@
 @import "font.scss";
 
+$primary-font: "Dual";
+$secondary-font: "Exodus";
+
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "Big Calson Medium", Arial, Helvetica, sans-serif;
+    font-family: $primary-font, Arial, Helvetica, sans-serif;
     font-size: $font-default;
 }
 
@@ -13,11 +16,11 @@ body {
 }
 
 .title {
-    font-family: "Dumbledor 1 Wide", Arial, Helvetica, sans-serif;
+    font-family: $secondary-font, Arial, Helvetica, sans-serif;
     font-size: $font-title;
 
     &-big {
-        font-family: "Dumbledor 1 Wide", Arial, Helvetica, sans-serif;
+        font-family: $secondary-font, Arial, Helvetica, sans-serif;
         font-size: $font-big-title;
     }
 }

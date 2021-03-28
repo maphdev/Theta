@@ -2,5 +2,12 @@
     "home": {
         "title": "Project Theta",
         "subtitle": "The game"
+    },
+    "board": {
+        "menu": {
+            "tab_1": "Project THETA",
+            "tab_2": "Characters backstories",
+            "tab_3": "How to play"
+        }
     }
 }
