@@ -1,6 +1,14 @@
+@import "responsive.scss";
+
 .scores{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 40px 0px;
+}
+
+@include tablet-small {
+    .scores {
+        margin: 15px;
+    }
 }

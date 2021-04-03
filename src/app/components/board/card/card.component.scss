@@ -112,3 +112,16 @@ $border-radius: 5%;
         }
     }
 }
+
+@include tablet-small {
+    .card {
+        height: 400px;
+        .card-visual {
+            height: 250px;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

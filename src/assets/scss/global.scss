@@ -1,4 +1,6 @@
 @import "font.scss";
+@import "responsive.scss";
+@import "color.scss";
 
 $primary-font: "Dual";
 $secondary-font: "Exodus";
@@ -8,6 +10,7 @@ body {
     padding: 0px;
     font-family: $primary-font, Arial, Helvetica, sans-serif;
     font-size: $font-default;
+    background-color: $primary-dark-blue;
 }
 
 .page {
@@ -35,5 +38,12 @@ body {
 
     &-big {
         font-size: $font-big-title;
+    }
+}
+
+@include tablet-small {
+    .page {
+        width: 100%;
+        height: 100%;
     }
 }

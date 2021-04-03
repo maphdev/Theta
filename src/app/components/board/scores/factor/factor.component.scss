@@ -1,4 +1,5 @@
 @import "font.scss";
+@import "responsive.scss";
 
 .factor {
     display: flex;
@@ -17,5 +18,18 @@
     .loss {
         color: red;
         -webkit-text-stroke: 2px red;
+    }
+}
+
+@include tablet-small {
+    .factor {
+        span {
+            font-size: $font-default;
+        }
+
+        img {
+            width: 25px !important;
+            height: 25px !important;
+        }
     }
 }

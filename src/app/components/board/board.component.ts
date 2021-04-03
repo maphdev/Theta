@@ -16,6 +16,9 @@ export class BoardComponent implements OnInit {
   currentIndexCard: number;
   counter: number;
 
+  // burger menu
+  toggled = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -88,5 +91,9 @@ export class BoardComponent implements OnInit {
         this.currentCard = cardDeck[this.currentIndexCard];
       }
     }
+  }
+
+  public showMenuTabs(): void {
+    this.toggled = !this.toggled;
   }
 }
