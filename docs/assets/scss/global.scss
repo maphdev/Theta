@@ -1,0 +1,49 @@
+@import "font.scss";
+@import "responsive.scss";
+@import "color.scss";
+
+$primary-font: "Dual";
+$secondary-font: "Exodus";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: $primary-font, Arial, Helvetica, sans-serif;
+    font-size: $font-default;
+    background-color: $primary-dark-blue;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    font-family: $secondary-font, Arial, Helvetica, sans-serif;
+    font-size: $font-title;
+
+    &-big {
+        font-family: $secondary-font, Arial, Helvetica, sans-serif;
+        font-size: $font-big-title;
+    }
+
+    &-bigger {
+        font-family: $secondary-font, Arial, Helvetica, sans-serif;
+        font-size: $font-bigger-title;
+    }
+}
+
+.subtitle {
+    font-size: $font-title;
+
+    &-big {
+        font-size: $font-big-title;
+    }
+}
+
+@include tablet-small {
+    .page {
+        width: 100%;
+        height: 100%;
+    }
+}
