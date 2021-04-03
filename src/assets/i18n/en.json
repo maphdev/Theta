@@ -1,13 +1,22 @@
 {
     "home": {
         "title": "Project Theta",
-        "subtitle": "The game"
+        "subtitle": "The game",
+        "button": "Play"
     },
     "board": {
         "menu": {
             "tab_1": "Project THETA",
             "tab_2": "Characters backstories",
             "tab_3": "How to play"
+        },
+        "tooltip": {
+            "not_implemented_yet": "Not implemented yet!",
+            "factor_1": "Resources",
+            "factor_2": "Technology",
+            "factor_3": "Population",
+            "factor_4": "Finances",
+            "progress": "Progress in game"
         }
     }
 }

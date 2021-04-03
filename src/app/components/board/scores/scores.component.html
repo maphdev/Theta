@@ -1,6 +1,30 @@
 <div class="scores">
-    <theta-factor [imagePath]="'./assets/images/factors/fish.svg'" [score]="scores.resources"></theta-factor>
-    <theta-factor [imagePath]="'./assets/images/factors/lightbulb.svg'" [score]="scores.technology"></theta-factor>
-    <theta-factor [imagePath]="'./assets/images/factors/human.svg'" [score]="scores.population"></theta-factor>
-    <theta-factor [imagePath]="'./assets/images/factors/shell.svg'" [score]="scores.finances"></theta-factor>
+    <theta-factor
+        [imagePath]="'./assets/images/factors/fish.svg'"
+        [score]="scores.resources"
+        placement="top"
+        ngbTooltip="{{ 'board.tooltip.factor_1'| translate }}"
+        tooltipClass="tooltip-custom-class">
+    </theta-factor>
+    <theta-factor
+        [imagePath]="'./assets/images/factors/lightbulb.svg'"
+        [score]="scores.technology"
+        placement="top"
+        ngbTooltip="{{ 'board.tooltip.factor_2'| translate }}"
+        tooltipClass="tooltip-custom-class">
+    </theta-factor>
+    <theta-factor
+        [imagePath]="'./assets/images/factors/human.svg'"
+        [score]="scores.population"
+        placement="top"
+        ngbTooltip="{{ 'board.tooltip.factor_3'| translate }}"
+        tooltipClass="tooltip-custom-class">
+    </theta-factor>
+    <theta-factor
+        [imagePath]="'./assets/images/factors/shell.svg'"
+        [score]="scores.finances"
+        placement="top"
+        ngbTooltip="{{ 'board.tooltip.factor_4'| translate }}"
+        tooltipClass="tooltip-custom-class">
+    </theta-factor>
 </div>

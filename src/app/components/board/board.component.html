@@ -1,9 +1,15 @@
 <div class="page board">
     <div class="menu">
         <li>
-            <ul>{{ 'board.menu.tab_1'| translate }}</ul>
-            <ul>{{ 'board.menu.tab_2'| translate }}</ul>
-            <ul>{{ 'board.menu.tab_3'| translate }}</ul>
+            <ul placement="bottom" ngbTooltip="{{ 'board.tooltip.not_implemented_yet'| translate }}" tooltipClass="tooltip-custom-class">
+                {{ 'board.menu.tab_1'| translate }}
+            </ul>
+            <ul placement="bottom" ngbTooltip="{{ 'board.tooltip.not_implemented_yet'| translate }}" tooltipClass="tooltip-custom-class">
+                {{ 'board.menu.tab_2'| translate }}
+            </ul>
+            <ul placement="bottom" ngbTooltip="{{ 'board.tooltip.not_implemented_yet'| translate }}" tooltipClass="tooltip-custom-class">
+                {{ 'board.menu.tab_3'| translate }}
+            </ul>
         </li>
     </div>
     <div class="content">
@@ -18,7 +24,7 @@
             ></theta-card>
         </div>
     </div>
-    <div class="counter">
+    <div class="counter" placement="top" ngbTooltip="{{ 'board.tooltip.progress'| translate }}" tooltipClass="tooltip-custom-class">
         <span>{{ counter }} km</span>
     </div>
 </div>

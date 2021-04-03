@@ -92,21 +92,21 @@ export const cardDeck: Array<Card> = [
         problem: {
             text: "Quelques Dockeurs sont tombés malades. Ils ne peuvent pas se payer de médicaments.",
             firstChoice: {
-                text: "Je leur fournirai les médicaments.",
-                consequences: {
-                    resources: -1,
-                    technology: 0,
-                    population: 1,
-                    finances: -1
-                }
-            },
-            secondChoice: {
                 text: "Je ne peux pas les traiter différemment des autres.",
                 consequences: {
                     resources: 1,
                     technology: 0,
                     population: -2,
                     finances: 1
+                }
+            },
+            secondChoice: {
+                text: "Je leur fournirai les médicaments.",
+                consequences: {
+                    resources: -1,
+                    technology: 0,
+                    population: 1,
+                    finances: -1
                 }
             }
         }
@@ -134,6 +134,276 @@ export const cardDeck: Array<Card> = [
                     technology: 0,
                     population: 1,
                     finances: -1
+                }
+            }
+        }
+    },
+    // Problem 6
+    {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Adara Grünberg',
+        imagePath: './assets/images/pnj/Adara_Grünberg.png',
+        problem: {
+            text: "Mon amour, les habitants s'ennuient et ont besoin de divertissement.",
+            firstChoice: {
+                text: "Créons un zoo sous-marin.",
+                consequences: {
+                    resources: -1,
+                    technology: 0,
+                    population: 1,
+                    finances: -2
+                }
+            },
+            secondChoice: {
+                text: "Nous avons plus important à faire.",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: -2,
+                    finances: 2
+                }
+            }
+        }
+    },
+    // Problem 7
+    {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Conseiller Gayhardt',
+        imagePath: './assets/images/pnj/Conseiller_Gayhardt.png',
+        problem: {
+            text: "Archibald, j'ai une mauvaise nouvelle à t'annoncer.",
+            firstChoice: {
+                text: "Qu'est-ce qu'il y a ?",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: 0,
+                    finances: 0
+                }
+            },
+            secondChoice: {
+                text: "Crache-moi le morceau !",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: 0,
+                    finances: 0
+                }
+            }
+        }
+    },
+    // Problem 8
+    {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Conseiller Gayhardt',
+        imagePath: './assets/images/pnj/Conseiller_Gayhardt.png',
+        problem: {
+            text: "Les pêcheurs croient avoir vu une énorme créature juste au-delà des monts sous-marins.",
+            firstChoice: {
+                text: "Ce n'est pas possible.",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: -1,
+                    finances: 0
+                }
+            },
+            secondChoice: {
+                text: "Parlez-moi de cette créature.",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: 1,
+                    finances: 0
+                }
+            }
+        }
+    },
+     // Problem 9
+     {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Conseiller Gayhardt',
+        imagePath: './assets/images/pnj/Conseiller_Gayhardt.png',
+        problem: {
+            text: "Il prend forme d'un serpent gigantesque sanguinaire de plus de 15 mètres.",
+            firstChoice: {
+                text: "Créeons une balise électronique pour l'emprisonner.",
+                consequences: {
+                    resources: -1,
+                    technology: 2,
+                    population: 1,
+                    finances: -1
+                }
+            },
+            secondChoice: {
+                text: "Ce n'est qu'un mythe.",
+                consequences: {
+                    resources: -10,
+                    technology: -10,
+                    population: -10,
+                    finances: -10
+                }
+            }
+        }
+    },
+     // Problem 10
+     {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Conseiller Gayhardt',
+        imagePath: './assets/images/pnj/Conseiller_Gayhardt.png',
+        problem: {
+            text: "La balise électronique a fonctionné. Nous l'avons emprisonnée !",
+            firstChoice: {
+                text: "Tuez-la !",
+                consequences: {
+                    resources: -10,
+                    technology: -10,
+                    population: -10,
+                    finances: -10
+                }
+            },
+            secondChoice: {
+                text: "Exposons-la dans le zoo.",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: 1,
+                    finances: 2
+                }
+            }
+        }
+    },
+      // Problem 11
+      {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Conseiller Gayhardt',
+        imagePath: './assets/images/pnj/Conseiller_Gayhardt.png',
+        problem: {
+            text: "La créature est parvenue à détruire l'aquarium du zoo !",
+            firstChoice: {
+                text: "Il ne faut pas la laisser s'échapper !",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: -2,
+                    finances: -1
+                }
+            },
+            secondChoice: {
+                text: "Protégez les citoyens !",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: 1,
+                    finances: -1
+                }
+            }
+        }
+    },
+     // Problem 12
+     {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Finn Habicht',
+        imagePath: './assets/images/pnj/Finn_Habicht.png',
+        problem: {
+            text: "J'ai entendu des bruits étranges dans les hangars cette nuit.",
+            firstChoice: {
+                text: "C'est rien. Ne vous inquiétez pas.",
+                consequences: {
+                    resources: -1,
+                    technology: 0,
+                    population: -2,
+                    finances: 0
+                }
+            },
+            secondChoice: {
+                text: " Renforçons les barrières.",
+                consequences: {
+                    resources: -2,
+                    technology: 1,
+                    population: 1,
+                    finances: -2
+                }
+            }
+        }
+    },
+     // Problem 13
+     {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Quentin Pascal',
+        imagePath: './assets/images/pnj/Quentin_Pascal.png',
+        problem: {
+            text: "Un Dellien a été tué par un Dockeur. Comment punir ce Dockeur pour son crime ?",
+            firstChoice: {
+                text: "Donnez-lui une seconde chance.",
+                consequences: {
+                    resources: 1,
+                    technology: 0,
+                    population: 1,
+                    finances: 0
+                }
+            },
+            secondChoice: {
+                text: "Bannissez-le de la ville de THETA.",
+                consequences: {
+                    resources: -1,
+                    technology: 0,
+                    population: -1,
+                    finances: 0
+                }
+            }
+        }
+    },
+    // Problem 14
+    {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Albrecht Grünberg',
+        imagePath: './assets/images/pnj/Albrecht_Grünberg.png',
+        problem: {
+            text: "Les Dockeurs se sentent surchargés de travail. Les autres castes doivent-elles les aider ?",
+            firstChoice: {
+                text: "Non, ce n'est pas leur travail.",
+                consequences: {
+                    resources: -1,
+                    technology: 0,
+                    population: 1,
+                    finances: -1
+                }
+            },
+            secondChoice: {
+                text: "Oui",
+                consequences: {
+                    resources: 2,
+                    technology: 1,
+                    population: 1,
+                    finances: 2
+                }
+            }
+        }
+    },
+    // Problem 15
+    {
+        cardType: CardTypeEnum.PROBLEM,
+        characterName: 'Adara Grünberg',
+        imagePath: './assets/images/pnj/Adara_Grünberg.png',
+        problem: {
+            text: "J'ai donné naissance à une fille. Comment allons-nous l'appeler ?",
+            firstChoice: {
+                text: "Ariane.",
+                consequences: {
+                    resources: 0,
+                    technology: 0,
+                    population: 0,
+                    finances: 0
+                }
+            },
+            secondChoice: {
+                text: "Comment oses-tu donner naissance à une fille ?",
+                consequences: {
+                    resources: 10,
+                    technology: 10,
+                    population: 10,
+                    finances: 10
                 }
             }
         }

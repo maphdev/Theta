@@ -13,6 +13,7 @@ import { BoardComponent } from './components/board/board.component';
 import { CardComponent } from './components/board/card/card.component';
 import { ScoresComponent } from './components/board/scores/scores.component';
 import { FactorComponent } from './components/board/scores/factor/factor.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { FactorComponent } from './components/board/scores/factor/factor.compone
             useFactory: HttpLoaderFactory,
             deps: [HttpClient]
         }
-    })
+    }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

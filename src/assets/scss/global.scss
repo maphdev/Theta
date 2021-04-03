@@ -23,12 +23,17 @@ body {
         font-family: $secondary-font, Arial, Helvetica, sans-serif;
         font-size: $font-big-title;
     }
+
+    &-bigger {
+        font-family: $secondary-font, Arial, Helvetica, sans-serif;
+        font-size: $font-bigger-title;
+    }
 }
 
 .subtitle {
-    font-size: $font-subtitle;
+    font-size: $font-title;
 
     &-big {
-        font-size: $font-title;
+        font-size: $font-big-title;
     }
 }
