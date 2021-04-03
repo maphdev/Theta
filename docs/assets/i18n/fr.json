@@ -1,0 +1,22 @@
+{
+    "home": {
+        "title": "Projet Theta",
+        "subtitle": "Le jeu",
+        "button": "Jouer"
+    },
+    "board": {
+        "menu": {
+            "tab_1": "Projet THETA",
+            "tab_2": "Histoire des personnages",
+            "tab_3": "Règles du jeu"
+        },
+        "tooltip": {
+            "not_implemented_yet": "Pas encore implémenté !",
+            "factor_1": "Ressources",
+            "factor_2": "Technologie",
+            "factor_3": "Population",
+            "factor_4": "Finances",
+            "progress": "Progrès dans le jeu"
+        }
+    }
+}
