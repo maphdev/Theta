@@ -20,7 +20,7 @@ export const cardDeck: Array<Card> = [
                 }
             },
             secondChoice: {
-                text: "Redessinez la ville.",
+                text: "Redessinez les plans.",
                 consequences: {
                     resources: -2,
                     technology: 2,
@@ -74,7 +74,7 @@ export const cardDeck: Array<Card> = [
                 }
             },
             secondChoice: {
-                text: "Faire travailler les pêcheurs plus longtemps.",
+                text: "Faisons travailler les pêcheurs plus longtemps.",
                 consequences: {
                     resources: 1,
                     technology: 0,
@@ -171,7 +171,7 @@ export const cardDeck: Array<Card> = [
         characterName: 'Conseiller Gayhardt',
         imagePath: './assets/images/pnj/Conseiller_Gayhardt.png',
         problem: {
-            text: "Archibald, j'ai une mauvaise nouvelle à t'annoncer.",
+            text: "Archibald, j'ai une mauvaise nouvelle à vous annoncer.",
             firstChoice: {
                 text: "Qu'est-ce qu'il y a ?",
                 consequences: {
@@ -182,7 +182,7 @@ export const cardDeck: Array<Card> = [
                 }
             },
             secondChoice: {
-                text: "Crache-moi le morceau !",
+                text: "Crachez-moi le morceau !",
                 consequences: {
                     resources: 0,
                     technology: 0,
@@ -254,7 +254,7 @@ export const cardDeck: Array<Card> = [
         problem: {
             text: "La balise électronique a fonctionné. Nous l'avons emprisonnée !",
             firstChoice: {
-                text: "Tuez-la !",
+                text: "Tuons-la !",
                 consequences: {
                     resources: -10,
                     technology: -10,
@@ -371,7 +371,7 @@ export const cardDeck: Array<Card> = [
                 }
             },
             secondChoice: {
-                text: "Oui",
+                text: "Oui.",
                 consequences: {
                     resources: 2,
                     technology: 1,
